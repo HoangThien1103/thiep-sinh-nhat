@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Trang 🎂</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="card">
+        <h1>Happy Birthday Trang 🎉</h1>
+        <p>Nhấn vào để mở bất ngờ 🎁</p>
+
+        <div class="cake">🎂</div>
+
+        <button class="btn" onclick="openCard()">Mở quà 🎁</button>
+    </div>
+
+    <!-- THIỆP -->
+    <div id="popup" class="popup hidden">
+        <div class="popup-content">
+            <img src="anh.png" class="avatar">
+
+            <h2>💌 Gửi Trang</h2>
+
+            <p id="typingText"></p>
+
+            <button onclick="closeCard()">Đóng</button>
+        </div>
+    </div>
+
+    <!-- confetti -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
